@@ -484,4 +484,13 @@
     bottom: calc(30px + env(safe-area-inset-bottom));
   }
 }
+/* Gifts image: crop to centre on mobile so the gift stays in frame */
+@media (max-width: 768px) {
+  .gifts-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
 /*** Mobile optimisations end ***/
