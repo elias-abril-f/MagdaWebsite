@@ -259,6 +259,15 @@
   position: relative;
   z-index: 9;
 }
+@media (max-width: 768px), (orientation: portrait) {
+  .wedding-date-bg .wedding-date {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("../img/countdown-iphone.jpg") center / 100% 100% no-repeat;
+  }
+}
 /*** Wedding Date End ***/
 
 /*** Wedding Timeline Start ***/
@@ -432,3 +441,47 @@
   background: var(--bs-dark) !important;
 }
 /*** copyright end ***/
+
+/*** Mobile optimisations ***/
+
+/* iOS Safari: 100vh includes browser chrome, causing carousel to overflow */
+@supports (-webkit-touch-callout: none) {
+  .carousel-item {
+    min-height: -webkit-fill-available;
+  }
+}
+
+/* About section photo: 650px is too tall when the column goes full-width on mobile */
+@media (max-width: 1199px) {
+  .about-photo {
+    height: auto !important;
+    max-height: 420px;
+  }
+}
+
+/* Hello section: cap photo width on small screens so text has room */
+@media (max-width: 575px) {
+  .hello-photo {
+    width: 38vw !important;
+    height: 38vw !important;
+  }
+}
+
+/* Countdown: reduce number size and tighten gaps on narrow phones */
+@media (max-width: 480px) {
+  .countdown-timer > div {
+    font-size: 1.25rem !important;
+    margin-right: 0.75rem !important;
+  }
+  .countdown-timer > div:last-child {
+    margin-right: 0 !important;
+  }
+}
+
+/* Back-to-top: stay above iOS home indicator */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .back-to-top {
+    bottom: calc(30px + env(safe-area-inset-bottom));
+  }
+}
+/*** Mobile optimisations end ***/
