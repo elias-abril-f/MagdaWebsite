@@ -442,7 +442,42 @@
 }
 /*** copyright end ***/
 
+/*** Map links ***/
+.map-link {
+  cursor: pointer;
+}
+.map-link:hover,
+.map-link.map-link-active {
+  color: var(--bs-primary) !important;
+  text-decoration: underline !important;
+}
+/*** Map links end ***/
+
 /*** Mobile optimisations ***/
+
+/* Carousel 3: desktop shows upper portion; mobile focuses on the couple (right side) */
+.carousel-img-3 {
+  object-position: center 20%;
+}
+@media (max-width: 767px) {
+  .carousel-img-3 {
+    object-position: 85% 40%;
+  }
+}
+
+/* Carousel 2: mobile shifts left to focus on the couple */
+@media (max-width: 767px) {
+  .carousel-img-2 {
+    object-position: 35% 40%;
+  }
+}
+
+/* Language toggle: hide desktop copy on mobile (replaced by the inline toggle) */
+@media (max-width: 1199px) {
+  .lang-toggle-desktop {
+    display: none !important;
+  }
+}
 
 /* iOS Safari: 100vh includes browser chrome, causing carousel to overflow */
 @supports (-webkit-touch-callout: none) {
