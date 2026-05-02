@@ -486,12 +486,22 @@
   }
 }
 
-/* About section photo: 650px is too tall when the column goes full-width on mobile */
+/* About section photo: cap at 55vh on all screens so it always fits */
+.about-photo {
+  max-height: 55vh !important;
+}
 @media (max-width: 1199px) {
   .about-photo {
     height: auto !important;
-    max-height: 420px;
   }
+}
+
+/* Vertical video: fit to screen in fullscreen rather than cropping to fill width */
+video:fullscreen,
+video:-webkit-full-screen,
+video:-moz-full-screen {
+  object-fit: contain;
+  background: #000;
 }
 
 /* Hello section: cap photo width on small screens so text has room */
