@@ -318,7 +318,7 @@
     <!-- Start -->
     <div class="container-fluid position-relative py-5" id="weddingAbout">
       <div
-        class="position-absolute"
+        class="position-absolute tamp-divider tamp-divider-flip"
         style="
           top: -10.3rem;
           right: -8.5rem;
@@ -329,7 +329,7 @@
       </div>
 
       <div
-        class="position-absolute"
+        class="position-absolute tamp-divider"
         style="top: -10.3rem; left: -8.5rem; transform: scale(0.5)"
       >
         <img src="img/tamp-bg-1.png" class="img-fluid" alt="" />
@@ -480,7 +480,12 @@
                 controls
                 preload="metadata"
                 playsinline
-                style="width: 100%; height: 100%; object-fit: cover; display: block"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                "
               >
                 <source src="img/wedding-compressed.mp4" type="video/mp4" />
               </video>
@@ -552,13 +557,13 @@
     <!--- Wedding Date -->
     <div class="container-fluid wedding-date-bg position-relative py-5">
       <div
-        class="position-absolute"
+        class="position-absolute tamp-divider"
         style="top: -10.3rem; left: -8.5rem; transform: scale(0.5)"
       >
         <img src="img/tamp-bg-1.png" class="img-fluid" alt="" />
       </div>
       <div
-        class="position-absolute"
+        class="position-absolute tamp-divider tamp-divider-flip"
         style="
           top: -10.3rem;
           right: -8.5rem;
@@ -961,7 +966,14 @@
             </div>
             <div class="col-md-4 wow fadeIn" data-wow-delay="0.3s">
               <div class="p-4 border-secondary" style="border-style: double">
-                <h4><a href="#" class="map-link text-dark text-decoration-none" id="churchLink"><span id="church">Church</span></a></h4>
+                <h4>
+                  <a
+                    href="#"
+                    class="map-link text-dark text-decoration-none"
+                    id="churchLink"
+                    ><span id="church">Church</span></a
+                  >
+                </h4>
                 <!-- add copy button -->
                 <p class="mb-0 text-dark">Kościół pw. bł. Karoliny Kózkówny</p>
                 <p class="mb-0 text-dark">Wczasowa 22a, 05-126 Białobrzegi</p>
@@ -969,7 +981,14 @@
             </div>
             <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
               <div class="p-4 border-secondary" style="border-style: double">
-                <h4><a href="#" class="map-link text-dark text-decoration-none" id="venueLink"><span id="venue">Venue</span></a></h4>
+                <h4>
+                  <a
+                    href="#"
+                    class="map-link text-dark text-decoration-none"
+                    id="venueLink"
+                    ><span id="venue">Venue</span></a
+                  >
+                </h4>
                 <p class="mb-0 text-dark">Folwark u Różyca</p>
                 <p class="mb-0 text-dark">Wczasowa 48, 05-127 Białobrzegi</p>
               </div>
@@ -995,7 +1014,7 @@
     <!-- Hotels -->
     <div class="container-fluid story position-relative py-5" id="weddingStory">
       <div
-        class="position-absolute"
+        class="position-absolute tamp-divider tamp-divider-flip"
         style="
           top: -10.1rem;
           right: -8.5rem;
@@ -1005,7 +1024,7 @@
         <img src="img/tamp-bg-1.png" class="img-fluid" alt="" />
       </div>
       <div
-        class="position-absolute"
+        class="position-absolute tamp-divider"
         style="top: -10.1rem; left: -8.5rem; transform: scale(0.5)"
       >
         <img src="img/tamp-bg-1.png" class="img-fluid" alt="" />
@@ -1028,12 +1047,20 @@
         <div class="row g-4 wow fadeInUp" data-wow-delay="0.2s">
           <!-- Parking card -->
           <div class="col-md-6">
-            <div class="border-secondary h-100 d-flex flex-column" style="border-style: double; overflow: hidden; border-radius: 8px">
+            <div
+              class="border-secondary h-100 d-flex flex-column"
+              style="border-style: double; overflow: hidden; border-radius: 8px"
+            >
               <div style="aspect-ratio: 16/9; overflow: hidden">
                 <img
                   src="img/parking.jpg"
                   alt="Parking"
-                  style="width: 100%; height: 100%; object-fit: cover; object-position: center center"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center center;
+                  "
                 />
               </div>
               <div class="bg-secondary p-3 flex-grow-1">
@@ -1057,12 +1084,20 @@
           </div>
           <!-- Flowers card -->
           <div class="col-md-6">
-            <div class="border-secondary h-100 d-flex flex-column" style="border-style: double; overflow: hidden; border-radius: 8px">
+            <div
+              class="border-secondary h-100 d-flex flex-column"
+              style="border-style: double; overflow: hidden; border-radius: 8px"
+            >
               <div style="aspect-ratio: 16/9; overflow: hidden">
                 <img
                   src="img/flowers.png"
                   alt="Flowers"
-                  style="width: 100%; height: 100%; object-fit: cover; object-position: center center"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center center;
+                  "
                 />
               </div>
               <div class="bg-secondary p-3 flex-grow-1">
@@ -1371,8 +1406,9 @@
           rsvpButton2: "Potwierdź obecność",
           rsvpButton3: "Potwierdź obecność",
 
-          startTitle: "Cześć!",
-          startSubtitle: "Zapraszamy do świętowania z nami",
+          startTitle: "Witajcie!",
+          startSubtitle:
+            "Zapraszamy Was do wspólnego świętowania naszego ślubu",
           startMagdaText:
             "Dziesięć lat temu zakochałam się w studencie jazzu. Po roku bycia razem, spakowałam walizkę i bez wahania pojechałam z nim w ciemno do Londynu. Wiedziałam, że kiedyś go poślubię, więc to była prosta decyzja. Choć wcale nie było łatwo (przynajmniej na początku). Obecnie pracuję we wspinacze i hobbystycznie tworzę filmy, głównie zespołom Łukasza, choć plan jest żeby za kilka lat jechać w trasę z Foo Fighters. Jeśli chodzi o wesele…Mam plan być ostatnią osobą na parkiecie.",
           startLucaszText: "[do uzupełnienia]",

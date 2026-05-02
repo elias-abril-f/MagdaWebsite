@@ -528,4 +528,13 @@
     object-position: center center;
   }
 }
+/* Folk-art dividers (tamp-bg-1): shrink on mobile so they don't overflow */
+@media (max-width: 767px) {
+  .tamp-divider {
+    transform: scale(0.15) !important;
+  }
+  .tamp-divider-flip {
+    transform: rotate(180deg) scale(0.15) !important;
+  }
+}
 /*** Mobile optimisations end ***/
