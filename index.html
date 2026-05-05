@@ -63,6 +63,9 @@
               </h4>
             </a>
             <div class="d-flex d-xl-none align-items-center ms-auto me-2">
+              <span id="langLabelMobile" class="form-check-label small me-2"
+                >Język</span
+              >
               <label class="form-check-label small me-1">PL</label>
               <div class="form-check form-switch mb-0">
                 <input
@@ -101,6 +104,11 @@
                 <a href="#info" class="nav-item nav-link" id="navInfo">Info</a>
               </div>
               <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                <span
+                  id="langLabel"
+                  class="form-check-label lang-toggle-desktop me-2"
+                  >Język</span
+                >
                 <label class="form-check-label lang-toggle-desktop"
                   >Polski&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </label>
@@ -428,8 +436,17 @@
                     style="line-height: 30px"
                     id="startLucaszText"
                   >
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                    After six months of working alongside Magda at the escape
+                    room, I finally managed to win her over. It was tricky at
+                    first, but once she realised I was a drummer, it clicked
+                    right away for her. We fell in love from the first
+                    paradiddle, and that made it much easier to move to London
+                    in 2017 to study music. We agreed to stay for three or four
+                    years. Nine have passed, and we’re still here. I’m just so
+                    close to becoming a rock star - same as every year. To keep
+                    my musical passion going, I work in live events, mostly
+                    installing LED screens. At some point, I’d love to start my
+                    own company doing that.
                   </p>
                 </div>
               </div>
@@ -681,7 +698,7 @@
                 "
                 id="rsvpSubtitle"
               >
-                Kindly respond by the 25th of June 2026. We look forward to
+                Kindly respond by the 1st of July 2026. We look forward to
                 celebrating with you!
               </div>
 
@@ -1387,6 +1404,8 @@
           "hotel2Text",
           "rsvpSubmitButton",
           "exampletextarea",
+          "langLabel",
+          "langLabelMobile",
         ];
 
         // Polish translations (same idea as before — fill/adjust as needed)
@@ -1395,7 +1414,7 @@
           navAbout: "O nas",
           navRSVP: "RSVP",
           navInfo: "Informacje",
-          navButton: "Zarezerwuj obecność",
+          navButton: "Potwierdź obecność",
 
           gettingMarried1: "Pobieramy się!",
           gettingMarried2: "Pobieramy się!",
@@ -1411,8 +1430,9 @@
           startSubtitle:
             "Zapraszamy Was do wspólnego świętowania naszego ślubu",
           startMagdaText:
-            "Dziesięć lat temu zakochałam się w studencie jazzu. Po roku bycia razem, spakowałam walizkę i bez wahania pojechałam z nim w ciemno do Londynu. Wiedziałam, że kiedyś go poślubię, więc to była prosta decyzja. Choć wcale nie było łatwo (przynajmniej na początku). Obecnie pracuję we wspinacze i hobbystycznie tworzę filmy, głównie zespołom Łukasza, choć plan jest żeby za kilka lat jechać w trasę z Foo Fighters. Jeśli chodzi o wesele…Mam plan być ostatnią osobą na parkiecie.",
-          startLucaszText: "[do uzupełnienia]",
+            "Dziesięć lat temu zakochałam się w studencie jazzu. Po roku bycia razem spakowałam walizkę i bez wahania pojechałam z nim w ciemno do Londynu. Wiedziałam, że kiedyś go poślubię, więc to była prosta decyzja. Choć wcale nie było łatwo (przynajmniej na początku). Obecnie zajmuję się wspinaczką i hobbystycznie tworzę filmy, głównie zespołom Łukasza, choć plan jest, żeby za kilka lat jechać w trasę z Foo Fighters. Jeśli chodzi o wesele… Planuję być ostatnią osobą na parkiecie.",
+          startLucaszText:
+            "Po sześciu miesiącach wspólnej pracy w escape roomie udało mi się wreszcie wyrwać Magdę. Nie było to proste zadanie, ale jak się dowiedziała, że jestem perkusistą, to od razu kliknęło. Zakochaliśmy się od pierwszego paradiddla, co znacznie ułatwiło nam wyjazd na studia muzyczne do Londynu w 2017 roku. Uzgodniliśmy, że zostaniemy tam trzy, może cztery lata. Minęło dziewięć lat i dalej tam siedzimy. Już prawie zostałem gwiazdą rocka - jak co roku… Żeby móc utrzymywać muzyczną pasję, pracuję w eventach, głównie instalując ekrany LED-owe. Marzy mi się, żeby kiedyś założyć taką firmę w Polsce.",
 
           aboutUsH5Title: "",
           aboutUsTitle: "Krótki film o nas",
@@ -1433,7 +1453,7 @@
 
           rsvpTitle: "Formularz RSVP",
           rsvpSubtitle:
-            "Prosimy o odpowiedź do 25 czerwca 2026. Czekamy na wspólne świętowanie!",
+            "Prosimy o odpowiedź do 1 lipca 2026. Czekamy na wspólne świętowanie!",
           rsvpQuestion: "Czy będziesz obecny/a?",
           rsvpAcceptLabel: "Z przyjemnością potwierdzam!",
           rsvpDeclineLabel: "Z przykrością odmawiam",
@@ -1483,6 +1503,8 @@
           hotel2Text:
             "Zamiast tradycyjnego bukietu, prosimy o przyniesienie pęczka kwiatów lub wiązanki w stylu folk. Wszystkie kwiaty przyniesione w tym dniu zostaną zebrane razem i ułożone w coś wyjątkowego na sali, dodając magii naszemu dniu.",
           rsvpSubmitButton: "Wyślij teraz",
+          langLabel: "Language",
+          langLabelMobile: "Language",
         };
 
         // Store original EN values so we can restore exactly
